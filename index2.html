@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shrike 2018年和可怜的牛的微信报告</title>
+    <style>
+        .bg-night {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-night img {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+		.center{
+    display: block;
+    position: fixed;
+    _position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 700px;
+    height:500px;
+    margin-left: -333px;
+    margin-top: -200px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+    
+    </style>
+</head>
+<script>
+    
+        
+	    history.pushState({}, ""); 
+        window.onpopstate = function(event) {
+          location.href = "2.html";
+        };
+    
+	
+	
+	</script>
+<body>
+<font color=#00ff00 style="font-size:40px;font-family:黑体"><center>Shrike 2018年和可怜的牛的微信报告</font>
+<canvas id="canvas"></canvas>
+<div class="center">
+ 
+<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
+width=620 align=center border=0>
+<TBODY></TBODY></TABLE>
+<FORM name=textform>
+<CENTER><TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=17 readOnly wrap=virtual cols=100%></TEXTAREA> 
+</CENTER> 
+<SCRIPT language=javascript>
+var pos=0;
+function ShowText(strText)
+{
+document.textform.textfield.value = strText.substring(0,pos++);
+setTimeout("ShowText(strText)",180);
+if(pos==strText.length) 
+{
+return;
+}
+}
+var strText = " Shrike同学：\n 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→………………………………………………………………………………………………………………………………\n→ 2018年我们共发送消息1616129条，语音122813条，图片6124张，共占用空间604.2MB，约等于322122547.2字，约等于392本西游记，够孙悟空遭31819难。\n→2018年，我们提到最多的词是“钱”，平均每两天提一次，2019年一定会致富。\n→2018年朋友圈互动14次，清心寡欲，你一定是关了朋友圈，\n→2018年互相发消息连续最长天数：74天，互相不发消息最长连续天数：12天，这种频次，你一定是我的领导。\n→2018年互相转账/发红包8次，君子之交淡如水，朋友谈钱伤感情。\n→………………………………………………………………………………………………………………………………\n→2018年度关键词：密谋发财。君子藏器于身，待时而动，2019年会是一个心想事成的时候，多点自信就会少点焦虑。\n→………………………………………………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→发财\n→变瘦\n→升职"
+ShowText(strText);
+</SCRIPT>
+</FORM>
+</form>
+
+</div>
+</div>
+<div class="bg-night">
+    <img src="1.png">
+</div>
+</body>
+<script src="main.js"></script>
+
+</html>
