@@ -24,10 +24,10 @@
             z-index: -1;
         }
 		.center{
-    display: block;
+   display: block;
     position: fixed;
     _position: absolute;
-    top: 40%;
+    top: 30%;
     left: 40%;
     width: 700px;
     height:500px;
@@ -37,7 +37,19 @@
     
     /*background-color: #000000;*/
 }
+ /*.banner {
+	 
+    display: block;
+    position: fixed;
+    _position: absolute;
+  
+  
+    margin-left: 335px;
+    margin-top: 5px;
+    z-index: 10001;
     
+    /*background-color: #000000;*/
+}
     </style>
 </head>
 <script>
@@ -52,28 +64,31 @@
 	
 	</script>
 <body>
-<font color=#00ff00 style="font-size:40px;font-family:黑体"><center>李俊江和可怜的牛的2018年度微信报告</font>
+
+
 <canvas id="canvas"></canvas>
 <div class="center">
- 
+ <div class="banner" style="margin-bottom:20px"><font color=#00ff00 style="font-size:40px;font-family:黑体"><center>
+李俊江和可怜的牛的2018年度微信报告
+</font></div>
 <TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
 width=620 align=center border=0>
 <TBODY></TBODY></TABLE>
 <FORM name=textform>
-<CENTER><TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=19 readOnly wrap=virtual cols=70></TEXTAREA> 
+<CENTER><TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=22 readOnly wrap=virtual cols=70></TEXTAREA> 
 </CENTER> 
 <SCRIPT language=javascript>
 var pos=0;
 function ShowText(strText)
 {
 document.textform.textfield.value = strText.substring(0,pos++);
-setTimeout("ShowText(strText)",180);
+setTimeout("ShowText(strText)",30);
 if(pos==strText.length) 
 {
 return;
 }
 }
-var strText = " 李俊江同学：\n 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→………………………………………………………………………………………………………………………………\n→ 2018年我们共发送消息3679条，语音0条，图片212张。\n→2018年，我们提到最多是“产品”和商业模式\n→2018年朋友圈互动4次，清心寡欲，你一定是关了朋友圈，\n→2018年互相发消息连续最多的月份：5月，这个月我们有27天在联系，互相发消息最少月份：1月，这个月我们联系了5天\n→2018年互相转账/发红包2次。\n→………………………………………………………………………………………………………………………………\n→2018年度关键词：商业。\n→………………………………………………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→开心\n→升职\n→炼丹\n→祝你在新的一年里开开心心，做人最重要的是开心嘛~~"
+var strText = " 李俊江同学：\n 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→…………………………………………………………………………………………\n→ 2018年我们共发送消息3679条，语音0条，图片212张。\n→2018年，我们提到最多是“产品”和商业模式\n→2018年朋友圈互动4次，清心寡欲，你一定是关了朋友圈，\n→2018年互相发消息连续最多的月份：5月，这个月我们有27天在联系，互相发消息最少月份：1月，这个月我们联系了5天\n→2018年互相转账/发红包2次。\n→…………………………………………………………………………………………\n→2018年度关键词：商业。\n→…………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→开心\n→升职\n→炼丹\n→祝你在新的一年里开开心心，做人最重要的是开心嘛~~"
 ShowText(strText);
 </SCRIPT>
 </FORM>
