@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小王子和可怜的牛的2018年度微信报告</title>
+    <style>
+        .bg-night {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-night img {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+		.center{
+   display: block;
+    position: fixed;
+    _position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 700px;
+    height:500px;
+    margin-left: -333px;
+    margin-top: -200px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+ /*.banner {
+	 
+    display: block;
+    position: fixed;
+    _position: absolute;
+  
+  
+    margin-left: 335px;
+    margin-top: 5px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+    </style>
+</head>
+<script>
+    
+        
+	    history.pushState({}, ""); 
+        window.onpopstate = function(event) {
+          location.href = "2.html";
+        };
+    
+	
+	
+	</script>
+<body>
+
+
+<canvas id="canvas"></canvas>
+<div class="center">
+ <div class="banner" style="margin-bottom:20px"><font color=#00ff00 style="font-size:40px;font-family:黑体"><center>
+小王子和可怜的牛的2018年度微信报告
+</font></div>
+<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
+width=620 align=center border=0>
+<TBODY></TBODY></TABLE>
+<FORM name=textform>
+<CENTER>
+  <span class="bg-night"><img src="1.png"></span>
+  <TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=22 readOnly wrap=virtual cols=70></TEXTAREA> 
+</CENTER> 
+<SCRIPT language=javascript>
+var pos=0;
+function ShowText(strText)
+{
+document.textform.textfield.value = strText.substring(0,pos++);
+setTimeout("ShowText(strText)",30);
+if(pos==strText.length) 
+{
+return;
+}
+}
+var strText = " 小王子：\n 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→…………………………………………………………………………………………\n→2018年2月18日晚上21:11分,你通过了我的好友验证请求，我们开始成为微信好友。\n→2018年3月11日，我第一次为你发出了由我排版的内容《一个真实的狗血故事》，收获阅读数：537，点赞数：34，留言数：2，开启了我们的合作之路。\n→一年间我们联系的天数有103天，共发送消息12772条，图片231张，\n→2018年，我们提到最多的话题是“排版”\n→2018年互相发消息最多的月份：9月，共有17天\n→2018年互相转账/发红包28次\n→…………………………………………………………………………………………\n→2018年度关键词：赚钱，天大地大，开心赚钱最大，2019年会是一个心想事成的年份，祝你一整年都在暴富的路上越走越远。\n→…………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→开心\n→腰缠万贯"
+ShowText(strText);
+</SCRIPT>
+</FORM>
+</form>
+
+</div>
+</div>
+<div class="bg-night"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
