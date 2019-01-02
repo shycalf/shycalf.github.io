@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.ico" type="img/x-ico" />
+    <title>Arvin.杨剑和可怜的牛的2018年度微信报告</title>
+    <style>
+        .bg-night {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-night img {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+		.center{
+   display: block;
+    position: fixed;
+    _position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 700px;
+    height:500px;
+    margin-left: -333px;
+    margin-top: -200px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+ /*.banner {
+	 
+    display: block;
+    position: fixed;
+    _position: absolute;
+  
+  
+    margin-left: 335px;
+    margin-top: 5px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+    </style>
+</head>
+<script>
+    
+        
+	    history.pushState({}, ""); 
+        window.onpopstate = function(event) {
+          location.href = "2.html";
+        };
+    
+	
+	
+	</script>
+<body>
+
+
+<canvas id="canvas"></canvas>
+<div class="center">
+ <div class="banner" style="margin-bottom:20px"><font color=#00ff00 style="font-size:40px;font-family:黑体"><center>
+Arvin.杨剑和可怜的牛的2018年度微信报告
+</font></div>
+<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
+width=620 align=center border=0>
+<TBODY></TBODY></TABLE>
+<FORM name=textform>
+<CENTER>
+  <span class="bg-night"></span>
+  <TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=22 readOnly wrap=virtual cols=70></TEXTAREA> 
+</CENTER> 
+<SCRIPT language=javascript>
+var pos=0;
+function ShowText(strText)
+{
+document.textform.textfield.value = strText.substring(0,pos++);
+setTimeout("ShowText(strText)",30);
+if(pos==strText.length) 
+{
+return;
+}
+}
+var strText = " Arvin.杨剑：\n 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→…………………………………………………………………………………………\n→2018年我们共发送文字消息3条，图片0张，小视频0条,图文链接1条\n→2018年互相转账/发红包0次\n→2018年，我们联系最多的月份是6月，6月22日，你向我发送了一条《年轻人如何选择一个适合自己的工作》的图文，并给出了简短的介绍，这是你在摩托罗拉的同事写的内容，是为我在职业选择上给出的参考，很感谢你对我的关注和建议\n→…………………………………………………………………………………………\n→虽然平时的联系极少，但是依然会很关注你的动态，2018年度你的关注点：求知，教育，科技，通信。这一年，你在积极的探索这个世界，关注世界发生的变革，同时又不忽略生活中的情趣，积极提高自己的幸福感，缓解焦虑，在自己的工作中为世界发光发热。2019年会是一个心想事成的年份，祝你一切都顺顺利利。\n→…………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→开心\n→健康\n→顺心 "
+ShowText(strText);
+</SCRIPT>
+</FORM>
+</form>
+
+</div>
+</div>
+<div class="bg-night"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
