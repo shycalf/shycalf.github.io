@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.ico" type="img/x-ico" />
+    <title>52赫兹和可怜的牛的2018年度微信报告</title>
+    <style>
+        .bg-night {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-night img {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+		.center{
+   display: block;
+    position: fixed;
+    _position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 700px;
+    height:500px;
+    margin-left: -333px;
+    margin-top: -200px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+ /*.banner {
+	 
+    display: block;
+    position: fixed;
+    _position: absolute;
+  
+  
+    margin-left: 335px;
+    margin-top: 5px;
+    z-index: 10001;
+    
+    /*background-color: #000000;*/
+}
+    </style>
+</head>
+<script>
+    
+        
+	    history.pushState({}, ""); 
+        window.onpopstate = function(event) {
+          location.href = "2.html";
+        };
+    
+	
+	
+	</script>
+<body>
+
+
+<canvas id="canvas"></canvas>
+<div class="center">
+ <div class="banner" style="margin-bottom:20px"><font color=#00ff00 style="font-size:40px;font-family:黑体"><center>
+52赫兹和可怜的牛的2018年度微信报告
+</font></div>
+<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
+width=620 align=center border=0>
+<TBODY></TBODY></TABLE>
+<FORM name=textform>
+<CENTER>
+  <span class="bg-night"></span>
+  <TEXTAREA style="FONT-SIZE: 20px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=22 readOnly wrap=virtual cols=70></TEXTAREA> 
+</CENTER> 
+<SCRIPT language=javascript>
+var pos=0;
+function ShowText(strText)
+{
+document.textform.textfield.value = strText.substring(0,pos++);
+setTimeout("ShowText(strText)",30);
+if(pos==strText.length) 
+{
+return;
+}
+}
+var strText = " 52赫兹：\nn 你好，2018年已经结束，很高兴我还能存在你的微信列表里\n→…………………………………………………………………………………………\n→2018年我们共联系91天，图片67张，小视频4条\n→2018年互相转账/发红包5次\n→2018年，我们联系最多的月份是11月，这个月我们有13天在联系\n→…………………………………………………………………………………………\n→2018，我们讨论最多的是“妹子”2019年会是一个收获妹子的年份。\n→…………………………………………………………………………………………\n→2019年可怜的牛预言你会：\n→收租\n→收租\n→收租"
+ShowText(strText);
+</SCRIPT>
+</FORM>
+</form>
+
+</div>
+</div>
+<div class="bg-night"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
